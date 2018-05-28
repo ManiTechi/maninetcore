@@ -2,7 +2,7 @@ FROM microsoft/aspnetcore:2
 
 
 WORKDIR \app
-COPY bin\\Debug\\netcoreapp2.0\\publish .
+COPY api\\bin\\Debug\\netcoreapp2.0\\publish .
 
 ENTRYPOINT ["dotnet", "\\app\\api.dll"]
 
